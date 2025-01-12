@@ -25,7 +25,7 @@ RUN apk add --no-cache ca-certificates git \
     && chmod +x /usr/local/bin/kubectl
 
 # Production image
-FROM alpine:3.10
+FROM alpine:3.21.2
 
 # Create Non Privilaged user
 RUN addgroup --gid 101 botkube && \
